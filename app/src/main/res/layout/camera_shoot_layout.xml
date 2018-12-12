@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextureView
+            android:id="@+id/textureView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <ImageView
+            android:id="@+id/galleryBTN"
+            android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:src="@drawable/ic_gallery"
+               android:layout_alignParentBottom="true"
+               android:padding="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_toStartOf="@+id/pictureBTN"/>
+
+    <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/pictureBTN"
+            android:padding="16dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Take Picture"
+            android:src="@drawable/ic_camera"/>
+
+    <ImageView
+            android:id="@+id/flashBTN"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_flash_off"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/pictureBTN"/>
+
+</RelativeLayout>
